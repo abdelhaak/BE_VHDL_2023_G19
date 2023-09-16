@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pwm_out",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[3]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[5]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[4]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[7]",
+					"strict" : false
+				},
+				{
+					"name" : "freq_switch[6]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[1]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[2]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[3]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[4]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[5]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[6]",
+					"strict" : false
+				},
+				{
+					"name" : "duty_switch[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

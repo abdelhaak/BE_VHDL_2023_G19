@@ -1,0 +1,38 @@
+|pwm
+clk => pwmm.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+reset_n => pwmm.ACLR
+reset_n => counter[0].ACLR
+reset_n => counter[1].ACLR
+reset_n => counter[2].ACLR
+reset_n => counter[3].ACLR
+reset_n => counter[4].ACLR
+reset_n => counter[5].ACLR
+reset_n => counter[6].ACLR
+reset_n => counter[7].ACLR
+freq_switch[0] => Equal0.IN15
+freq_switch[1] => Equal0.IN14
+freq_switch[2] => Equal0.IN13
+freq_switch[3] => Equal0.IN12
+freq_switch[4] => Equal0.IN11
+freq_switch[5] => Equal0.IN10
+freq_switch[6] => Equal0.IN9
+freq_switch[7] => Equal0.IN8
+duty_switch[0] => Equal1.IN15
+duty_switch[1] => Equal1.IN14
+duty_switch[2] => Equal1.IN13
+duty_switch[3] => Equal1.IN12
+duty_switch[4] => Equal1.IN11
+duty_switch[5] => Equal1.IN10
+duty_switch[6] => Equal1.IN9
+duty_switch[7] => Equal1.IN8
+pwm_out << pwmm.DB_MAX_OUTPUT_PORT_TYPE
+
+

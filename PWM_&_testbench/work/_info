@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/abdel/Desktop/TP BE/PWM
+Epwm
+Z1 w1694617603
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/abdel/Desktop/TP BE/PWM/pwm.vhd
+Z7 FC:/Users/abdel/Desktop/TP BE/PWM/pwm.vhd
+l0
+L6
+VOacXZPbXW3WjDi1zNFb^T1
+!s100 24UGdlH<8XY7WW0[:8jF]0
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1694683088
+!i10b 1
+Z10 !s108 1694683088.000000
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/abdel/Desktop/TP BE/PWM/pwm.vhd|
+Z12 !s107 C:/Users/abdel/Desktop/TP BE/PWM/pwm.vhd|
+!i113 1
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 3 pwm 0 22 OacXZPbXW3WjDi1zNFb^T1
+l22
+L16
+VnaTnnb2AO>][0@>[hX?RP1
+!s100 MJ^6<D<<o4RzQ6Ma>SX4f3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Etestbench_pwm
+Z15 w1694681037
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z17 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R4
+R5
+R0
+Z18 8C:/Users/abdel/Desktop/TP BE/PWM/test_bench.vhd
+Z19 FC:/Users/abdel/Desktop/TP BE/PWM/test_bench.vhd
+l0
+L12
+VNHddbmaFFMzN2Kli8;lCU3
+!s100 hzW=aKa>KFobMgF4o6NVS3
+R8
+32
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/abdel/Desktop/TP BE/PWM/test_bench.vhd|
+Z21 !s107 C:/Users/abdel/Desktop/TP BE/PWM/test_bench.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R17
+R4
+R5
+Z22 DEx4 work 13 testbench_pwm 0 22 NHddbmaFFMzN2Kli8;lCU3
+l38
+L16
+Z23 VGOOLDVAcHH?Yn_Db]H?Xf0
+Z24 !s100 i[@;:aM@mm6lTASoOR;`@2
+R8
+32
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14

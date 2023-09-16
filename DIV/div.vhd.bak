@@ -1,0 +1,38 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Blinking_LED is
+    Port (
+        clk : in  STD_LOGIC;      -- Horloge de 50 MHz en entrée
+        rst : in  STD_LOGIC;      -- Signal de réinitialisation en entrée
+        led : out STD_LOGIC       -- Sortie vers la LED
+    );
+end Blinking_LED;
+
+architecture Behavioral of Blinking_LED is
+    signal counter : STD_LOGIC_VECTOR(25 downto 0) := (others => '0');
+    signal one_second_pulse : STD_LOGIC := '0';
+
+begin
+    -- Processus pour compter jusqu'à 25 000 000 (50 000 000 / 2)
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            counter <= (others => '0');
+            one_second_pulse <= '0';
+        elsif rising_edge(clk) then
+            if counter = "110000100001011110100000" then  -- Correspond à 25 000 000 en binaire
+                counter <= (others => '0');
+                one_second_pulse <= '1';
+            else
+                counter <= counter + 1;
+            end if;
+        end if;
+    end process;
+
+    -- Sortie de la LED en fonction du signal de 1 Hz
+    led <= one_second_pulse;
+
+end Behavioral;
