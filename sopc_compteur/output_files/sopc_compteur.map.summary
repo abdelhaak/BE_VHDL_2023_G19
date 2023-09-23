@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 21 15:43:01 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sopc_compteur
+Top-level Entity Name : sopc_compteur
+Family : Cyclone IV E
+Total logic elements : 1,803
+    Total combinational functions : 1,606
+    Dedicated logic registers : 945
+Total registers : 945
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 175,104
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
