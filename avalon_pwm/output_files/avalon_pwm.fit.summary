@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Sep 25 16:09:10 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : avalon_pwm
+Top-level Entity Name : avalon_pwm_schema
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 2,073 / 22,320 ( 9 % )
+    Total combinational functions : 1,944 / 22,320 ( 9 % )
+    Dedicated logic registers : 1,083 / 22,320 ( 5 % )
+Total registers : 1083
+Total pins : 12 / 154 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 175,104 / 608,256 ( 29 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

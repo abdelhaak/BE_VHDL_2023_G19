@@ -120,7 +120,7 @@ ACDS_VERSION := 18.1
 #
 # It may be used by the makefile fragments so is defined before including them.
 #
-LIB_NAME := library_sopc_compteur
+LIB_NAME := biblio
 
 # Paths to C, C++, and assembly source files.
 C_SRCS :=

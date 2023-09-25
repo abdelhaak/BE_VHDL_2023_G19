@@ -31,11 +31,11 @@ ACDS_VERSION := 18.1
 ALT_LIBRARY_DIRS += $(ALT_LIBRARY_ROOT_DIR)
 
 # Library name for -l linker option (-l added when used).
-ALT_LIBRARY_NAMES += library_sopc_compteur
+ALT_LIBRARY_NAMES += biblio
 
 # Library dependencies for the linker.
 # This is the full pathname of the library (*.a) file.
-ALT_LDDEPS += $(ALT_LIBRARY_ROOT_DIR)/liblibrary_sopc_compteur.a
+ALT_LDDEPS += $(ALT_LIBRARY_ROOT_DIR)/libbiblio.a
 
 # This library supports running make to build it.
 MAKEABLE_LIBRARY_ROOT_DIRS += $(ALT_LIBRARY_ROOT_DIR)

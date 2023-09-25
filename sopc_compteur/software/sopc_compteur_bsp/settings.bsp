@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>21 sept. 2023 15:49:17</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1695304157875</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>23 sept. 2023 13:26:29</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1695468389915</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\abdel\Desktop\BE_VHDL_23_G19\sopc_compteur\software\sopc_compteur_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\sopc.sopcinfo</SopcDesignFile>

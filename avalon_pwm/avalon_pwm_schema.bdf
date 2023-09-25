@@ -1,0 +1,206 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 336 216 536 232)
+	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
+	(text "boutons_export[1..0]" (rect 5 0 107 12)(font "Arial" ))
+	(pt 200 8)
+	(drawing
+		(line (pt 116 12)(pt 141 12))
+		(line (pt 116 4)(pt 141 4))
+		(line (pt 145 8)(pt 200 8))
+		(line (pt 116 12)(pt 116 4))
+		(line (pt 141 4)(pt 145 8))
+		(line (pt 141 12)(pt 145 8))
+	)
+	(text "VCC" (rect 160 7 180 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 272 232 336 256))
+)
+(pin
+	(input)
+	(rect 368 256 536 272)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 20 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 312 272 368 296))
+)
+(pin
+	(output)
+	(rect 448 400 696 416)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "out_pwm_writeresponsevalid_n" (rect 90 0 242 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 696 416 752 440))
+)
+(pin
+	(output)
+	(rect 448 440 624 456)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "leds_export[7..0]" (rect 90 0 169 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 624 456 688 480))
+)
+(symbol
+	(rect 520 192 984 416)
+	(text "avalon_cmpt" (rect 196 -1 280 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "boutons_export[1..0]" (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "boutons_export[1..0]" (rect 4 61 122 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 176 72)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 101 41 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 176 112))
+	)
+	(port
+		(pt 0 152)
+		(output)
+		(text "leds_export[7..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "leds_export[7..0]" (rect 4 141 99 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 176 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "out_pwm_writeresponsevalid_n" (rect 0 0 184 14)(font "Arial" (font_size 8)))
+		(text "out_pwm_writeresponsevalid_n" (rect 4 181 188 195)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 176 192))
+	)
+	(drawing
+		(text "boutons" (rect 131 43 184 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 181 67 211 79)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 161 83 178 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 181 107 195 119)(font "Arial" (color 0 0 0)))
+		(text "leds" (rect 153 123 181 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 181 147 211 159)(font "Arial" (color 0 0 0)))
+		(text "out_pwm" (rect 123 163 183 178)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "writeresponsevalid_n" (rect 181 187 283 199)(font "Arial" (color 0 0 0)))
+		(text " avalon_cmpt " (rect 406 208 476 220)(font "Arial" ))
+		(line (pt 176 32)(pt 288 32))
+		(line (pt 288 32)(pt 288 208))
+		(line (pt 176 208)(pt 288 208))
+		(line (pt 176 32)(pt 176 208))
+		(line (pt 177 52)(pt 177 76))
+		(line (pt 178 52)(pt 178 76))
+		(line (pt 177 92)(pt 177 116))
+		(line (pt 178 92)(pt 178 116))
+		(line (pt 177 132)(pt 177 156))
+		(line (pt 178 132)(pt 178 156))
+		(line (pt 177 172)(pt 177 196))
+		(line (pt 178 172)(pt 178 196))
+		(line (pt 0 0)(pt 464 0))
+		(line (pt 464 0)(pt 464 224))
+		(line (pt 0 224)(pt 464 224))
+		(line (pt 0 0)(pt 0 224))
+	)
+)
+(connector
+	(pt 416 448)
+	(pt 448 448)
+	(bus)
+)
+(connector
+	(pt 432 408)
+	(pt 448 408)
+)
+(connector
+	(pt 544 224)
+	(pt 544 264)
+	(bus)
+)
+(connector
+	(pt 536 224)
+	(pt 544 224)
+	(bus)
+)
+(connector
+	(pt 544 264)
+	(pt 544 304)
+)
+(connector
+	(pt 544 304)
+	(pt 520 304)
+)
+(connector
+	(pt 416 344)
+	(pt 520 344)
+	(bus)
+)
+(connector
+	(pt 416 448)
+	(pt 416 344)
+	(bus)
+)
+(connector
+	(pt 432 384)
+	(pt 520 384)
+)
+(connector
+	(pt 432 408)
+	(pt 432 384)
+)
+(connector
+	(pt 536 264)
+	(pt 520 264)
+	(bus)
+)
+(connector
+	(pt 544 264)
+	(pt 536 264)
+	(bus)
+)
+(junction (pt 544 264))
+(junction (pt 536 264))

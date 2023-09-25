@@ -3,7 +3,7 @@
 # Machine generated for CPU 'CPU' in SOPC Builder design 'sopc'
 # SOPC Builder design path: ../../sopc.sopcinfo
 #
-# Generated: Thu Sep 21 15:49:18 CEST 2023
+# Generated: Sat Sep 23 13:26:30 CEST 2023
 
 # DO NOT MODIFY THIS FILE
 #

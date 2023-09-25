@@ -1,6 +1,6 @@
-15:49:20 **** Clean-only build of configuration Nios II for project sopc_compteur_bsp ****
+13:26:32 **** Clean-only build of configuration Nios II for project sopc_compteur_bsp ****
 make clean 
 [BSP clean complete]
 
-15:49:21 Build Finished (took 685ms)
+13:26:32 Build Finished (took 397ms)
 
