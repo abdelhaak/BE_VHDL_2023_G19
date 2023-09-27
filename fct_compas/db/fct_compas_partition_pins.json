@@ -8,43 +8,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_compas[0]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[1]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[2]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[3]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[4]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[5]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[6]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[7]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[8]",
-					"strict" : false
-				},
-				{
-					"name" : "continu",
+					"name" : "continue",
 					"strict" : false
 				},
 				{
@@ -52,47 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_1Hz",
-					"strict" : false
-				},
-				{
-					"name" : "FM",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "data_in[8]",
+					"name" : "clk_50MHz",
 					"strict" : false
 				}
 			]

@@ -1,48 +1,40 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.ALL;
-  
+use IEEE.NUMERIC_STD.ALL;
+
 entity compas is
-port ( 	clk_1Hz, continu, start_stop, FM: in std_logic;
-		data_in : in std_logic_vector (8 downto 0);
-		data_valid : out std_logic;
-		data_compas : out std_logic_vector (8 downto 0));
+    Port (
+        clk_1Hz, continu, start_stop: in STD_LOGIC;
+        data_in : in STD_LOGIC_VECTOR (8 downto 0);
+        data_valid : out STD_LOGIC;
+        data_compas : out STD_LOGIC_VECTOR (8 downto 0)
+    );
 end compas;
-  
+
 architecture behavior of compas is
-  
-  signal tmp, tmp1 : std_logic_vector (8 downto 0);
-  
-begin
-  
-process(clk_1Hz)
-
+    signal tmp, tmp1 : STD_LOGIC_VECTOR (8 downto 0);
+    signal data_valid_internal : STD_LOGIC;
 begin
 
-if(clk_1Hz'event and clk_1Hz='1') then
-	if continu = '1' then
-		if FM = '1' then
-			data_compas <= tmp;
-			data_valid <= '1';
-		else
-			tmp <= data_in;
-			data_valid <= '1';
-		end if;
-	else
-		if start_stop = '1' then
-			data_compas <= tmp;
-			data_valid <= '1';
-		else
-			data_compas <= "000000000";
-			data_valid <= '0';
-			if FM='0' then
-				tmp1 <= data_in;
-			else 
-				tmp <= tmp1;
-			end if;	
-		end if;
-	end if;		
-end if;
-end process;
-  
+    process(clk_1Hz)
+    begin
+        if clk_1Hz'event and clk_1Hz = '1' then
+            if continu = '1' then
+                data_compas <= tmp;
+                data_valid_internal <= '1';
+            else
+                if start_stop = '1' then
+                    data_compas <= tmp;
+                    data_valid_internal <= '1';
+                else
+                    data_compas <= "000000000";
+                    data_valid_internal <= '0';
+                    tmp1 <= data_in;
+                end if;
+            end if;
+        end if;
+    end process;
+
+    data_valid <= data_valid_internal;
+
 end behavior;
