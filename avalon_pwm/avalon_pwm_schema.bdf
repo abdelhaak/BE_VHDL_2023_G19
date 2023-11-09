@@ -23,7 +23,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 336 216 536 232)
 	(text "INPUT" (rect 157 0 185 10)(font "Arial" (font_size 6)))
-	(text "boutons_export[1..0]" (rect 5 0 107 12)(font "Arial" ))
+	(text "boutons_export[1..0]" (rect 5 0 106 12)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -38,9 +38,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 368 256 536 272)
+	(rect 336 272 504 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 17)(font "Intel Clear" ))
+	(text "clk" (rect 5 0 19 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 312 272 368 296))
+	(annotation_block (location)(rect 280 288 336 312))
 )
 (pin
 	(output)
@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (location)(rect 624 456 688 480))
 )
 (symbol
-	(rect 520 192 984 416)
+	(rect 728 168 1192 392)
 	(text "avalon_cmpt" (rect 196 -1 280 15)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
@@ -157,50 +157,39 @@ refer to the applicable agreement for further details.
 	(pt 448 408)
 )
 (connector
-	(pt 544 224)
-	(pt 544 264)
-	(bus)
-)
-(connector
 	(pt 536 224)
 	(pt 544 224)
 	(bus)
 )
 (connector
-	(pt 544 264)
-	(pt 544 304)
-)
-(connector
-	(pt 544 304)
-	(pt 520 304)
-)
-(connector
-	(pt 416 344)
-	(pt 520 344)
+	(pt 416 320)
+	(pt 728 320)
 	(bus)
 )
 (connector
 	(pt 416 448)
-	(pt 416 344)
+	(pt 416 320)
 	(bus)
 )
 (connector
-	(pt 432 384)
-	(pt 520 384)
+	(pt 432 360)
+	(pt 728 360)
 )
 (connector
 	(pt 432 408)
-	(pt 432 384)
+	(pt 432 360)
 )
 (connector
-	(pt 536 264)
-	(pt 520 264)
+	(pt 504 280)
+	(pt 728 280)
+)
+(connector
+	(pt 728 240)
+	(pt 544 240)
 	(bus)
 )
 (connector
-	(pt 544 264)
-	(pt 536 264)
+	(pt 544 240)
+	(pt 544 224)
 	(bus)
 )
-(junction (pt 544 264))
-(junction (pt 536 264))

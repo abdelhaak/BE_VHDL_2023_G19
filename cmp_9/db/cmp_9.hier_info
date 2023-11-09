@@ -1,0 +1,180 @@
+|cmp_9
+data_valid <= compas:inst4.data_valid
+clk_50M => div_fre_1Hz:inst2.clk
+clk_50M => div_1khz:inst.clk_50M
+continu => compas:inst4.continu
+start_stop => compas:inst4.start_stop
+in_pwm_compas => detc_front:inst3.in_pwm_compas
+in_pwm_compas => sig_cmpt:inst5.in_pwm_compas
+raz_n => detc_front:inst3.raz_n
+raz_n => div_1khz:inst.raz_n
+data_compas[0] <= compas:inst4.data_compas[0]
+data_compas[1] <= compas:inst4.data_compas[1]
+data_compas[2] <= compas:inst4.data_compas[2]
+data_compas[3] <= compas:inst4.data_compas[3]
+data_compas[4] <= compas:inst4.data_compas[4]
+data_compas[5] <= compas:inst4.data_compas[5]
+data_compas[6] <= compas:inst4.data_compas[6]
+data_compas[7] <= compas:inst4.data_compas[7]
+data_compas[8] <= compas:inst4.data_compas[8]
+
+
+|cmp_9|compas:inst4
+clk_1Hz => data_compas[8]~reg0.CLK
+clk_1Hz => data_compas[7]~reg0.CLK
+clk_1Hz => data_compas[6]~reg0.CLK
+clk_1Hz => data_compas[5]~reg0.CLK
+clk_1Hz => data_compas[4]~reg0.CLK
+clk_1Hz => data_compas[3]~reg0.CLK
+clk_1Hz => data_compas[2]~reg0.CLK
+clk_1Hz => data_compas[1]~reg0.CLK
+clk_1Hz => data_compas[0]~reg0.CLK
+clk_1Hz => data_valid_internal.CLK
+continu => data_valid_internal~0.OUTPUTSELECT
+start_stop => data_valid_internal~0.DATAA
+data_in[0] => ~NO_FANOUT~
+data_in[1] => ~NO_FANOUT~
+data_in[2] => ~NO_FANOUT~
+data_in[3] => ~NO_FANOUT~
+data_in[4] => ~NO_FANOUT~
+data_in[5] => ~NO_FANOUT~
+data_in[6] => ~NO_FANOUT~
+data_in[7] => ~NO_FANOUT~
+data_in[8] => ~NO_FANOUT~
+data_valid <= data_valid_internal.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[0] <= data_compas[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[1] <= data_compas[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[2] <= data_compas[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[3] <= data_compas[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[4] <= data_compas[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[5] <= data_compas[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[6] <= data_compas[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[7] <= data_compas[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_compas[8] <= data_compas[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmp_9|div_fre_1Hz:inst2
+clk => counter[25].CLK
+clk => counter[24].CLK
+clk => counter[23].CLK
+clk => counter[22].CLK
+clk => counter[21].CLK
+clk => counter[20].CLK
+clk => counter[19].CLK
+clk => counter[18].CLK
+clk => counter[17].CLK
+clk => counter[16].CLK
+clk => counter[15].CLK
+clk => counter[14].CLK
+clk => counter[13].CLK
+clk => counter[12].CLK
+clk => counter[11].CLK
+clk => counter[10].CLK
+clk => counter[9].CLK
+clk => counter[8].CLK
+clk => counter[7].CLK
+clk => counter[6].CLK
+clk => counter[5].CLK
+clk => counter[4].CLK
+clk => counter[3].CLK
+clk => counter[2].CLK
+clk => counter[1].CLK
+clk => counter[0].CLK
+clk => one_second_pulse.CLK
+clk_1Hz <= one_second_pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmp_9|detc_front:inst3
+in_pwm_compas => compteur_out_angle[8]~8.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[7]~7.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[6]~6.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[5]~5.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[4]~4.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[3]~3.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[2]~2.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[1]~1.OUTPUTSELECT
+in_pwm_compas => compteur_out_angle[0]~0.OUTPUTSELECT
+in_pwm_compas => angle_front[8]~0.IN1
+raz_n => angle_front[8]~0.IN0
+raz_n => compteur_out_angle[8]~reg0.ENA
+raz_n => compteur_out_angle[7]~reg0.ENA
+raz_n => compteur_out_angle[6]~reg0.ENA
+raz_n => compteur_out_angle[5]~reg0.ENA
+raz_n => compteur_out_angle[4]~reg0.ENA
+raz_n => compteur_out_angle[3]~reg0.ENA
+raz_n => compteur_out_angle[2]~reg0.ENA
+raz_n => compteur_out_angle[1]~reg0.ENA
+raz_n => compteur_out_angle[0]~reg0.ENA
+e_signal_compteur => angle_front[8].CLK
+e_signal_compteur => angle_front[7].CLK
+e_signal_compteur => angle_front[6].CLK
+e_signal_compteur => angle_front[5].CLK
+e_signal_compteur => angle_front[4].CLK
+e_signal_compteur => angle_front[3].CLK
+e_signal_compteur => angle_front[2].CLK
+e_signal_compteur => angle_front[1].CLK
+e_signal_compteur => angle_front[0].CLK
+e_signal_compteur => compteur_out_angle[8]~reg0.CLK
+e_signal_compteur => compteur_out_angle[7]~reg0.CLK
+e_signal_compteur => compteur_out_angle[6]~reg0.CLK
+e_signal_compteur => compteur_out_angle[5]~reg0.CLK
+e_signal_compteur => compteur_out_angle[4]~reg0.CLK
+e_signal_compteur => compteur_out_angle[3]~reg0.CLK
+e_signal_compteur => compteur_out_angle[2]~reg0.CLK
+e_signal_compteur => compteur_out_angle[1]~reg0.CLK
+e_signal_compteur => compteur_out_angle[0]~reg0.CLK
+compteur_out_angle[0] <= compteur_out_angle[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[1] <= compteur_out_angle[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[2] <= compteur_out_angle[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[3] <= compteur_out_angle[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[4] <= compteur_out_angle[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[5] <= compteur_out_angle[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[6] <= compteur_out_angle[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[7] <= compteur_out_angle[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+compteur_out_angle[8] <= compteur_out_angle[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmp_9|sig_cmpt:inst5
+in_pwm_compas => e_signal_compteur~0.OUTPUTSELECT
+diviseur_1khz_out => e_signal_compteur~0.DATAB
+e_signal_compteur <= e_signal_compteur~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cmp_9|div_1khz:inst
+clk_50M => count[31].CLK
+clk_50M => count[30].CLK
+clk_50M => count[29].CLK
+clk_50M => count[28].CLK
+clk_50M => count[27].CLK
+clk_50M => count[26].CLK
+clk_50M => count[25].CLK
+clk_50M => count[24].CLK
+clk_50M => count[23].CLK
+clk_50M => count[22].CLK
+clk_50M => count[21].CLK
+clk_50M => count[20].CLK
+clk_50M => count[19].CLK
+clk_50M => count[18].CLK
+clk_50M => count[17].CLK
+clk_50M => count[16].CLK
+clk_50M => count[15].CLK
+clk_50M => count[14].CLK
+clk_50M => count[13].CLK
+clk_50M => count[12].CLK
+clk_50M => count[11].CLK
+clk_50M => count[10].CLK
+clk_50M => count[9].CLK
+clk_50M => count[8].CLK
+clk_50M => count[7].CLK
+clk_50M => count[6].CLK
+clk_50M => count[5].CLK
+clk_50M => count[4].CLK
+clk_50M => count[3].CLK
+clk_50M => count[2].CLK
+clk_50M => count[1].CLK
+clk_50M => count[0].CLK
+raz_n => count[0]~0.IN1
+raz_n => tmp~0.IN1
+diviseur_1khz_out <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

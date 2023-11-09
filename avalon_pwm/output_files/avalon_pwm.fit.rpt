@@ -1,5 +1,5 @@
 Fitter report for avalon_pwm
-Mon Sep 25 16:09:10 2023
+Mon Nov 06 16:36:56 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Sep 25 16:09:10 2023       ;
+; Fitter Status                      ; Successful - Mon Nov 06 16:36:56 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; avalon_pwm                                  ;
 ; Top-level Entity Name              ; avalon_pwm_schema                           ;
@@ -155,16 +155,16 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.12        ;
+; Average used               ; 1.08        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.4%      ;
-;     Processor 3            ;   2.4%      ;
-;     Processor 4            ;   2.4%      ;
-;     Processor 5            ;   2.4%      ;
-;     Processor 6            ;   2.4%      ;
+;     Processor 2            ;   1.7%      ;
+;     Processor 3            ;   1.6%      ;
+;     Processor 4            ;   1.6%      ;
+;     Processor 5            ;   1.6%      ;
+;     Processor 6            ;   1.6%      ;
 +----------------------------+-------------+
 
 
@@ -224,7 +224,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/output_files/avalon_pwm.pin.
+The pin-out file can be found in D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/output_files/avalon_pwm.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -2013,23 +2013,23 @@ Info (176353): Automatically promoted node clk~input (placed in PIN R8 (CLK15, D
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node avalon_cmpt:inst|altera_reset_controller:rst_controller|r_sync_rst  File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/altera_reset_controller.v Line: 288
+Info (176353): Automatically promoted node avalon_cmpt:inst|altera_reset_controller:rst_controller|r_sync_rst  File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/altera_reset_controller.v Line: 288
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node avalon_cmpt:inst|altera_reset_controller:rst_controller|WideOr0~0 File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/altera_reset_controller.v Line: 290
-        Info (176357): Destination node avalon_cmpt:inst|avalon_cmpt_cpu:cpu|avalon_cmpt_cpu_cpu:cpu|W_rf_wren File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_cmpt_cpu_cpu.v Line: 3451
+        Info (176357): Destination node avalon_cmpt:inst|altera_reset_controller:rst_controller|WideOr0~0 File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/altera_reset_controller.v Line: 290
+        Info (176357): Destination node avalon_cmpt:inst|avalon_cmpt_cpu:cpu|avalon_cmpt_cpu_cpu:cpu|W_rf_wren File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_cmpt_cpu_cpu.v Line: 3451
         Info (176357): Destination node avalon_cmpt:inst|avalon_cmpt_cpu:cpu|avalon_cmpt_cpu_cpu:cpu|avalon_cmpt_cpu_cpu_nios2_oci:the_avalon_cmpt_cpu_cpu_nios2_oci|avalon_cmpt_cpu_cpu_nios2_oci_debug:the_avalon_cmpt_cpu_cpu_nios2_oci_debug|altera_std_synchronizer:the_altera_std_synchronizer|din_s1 File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_std_synchronizer.v Line: 45
-Info (176353): Automatically promoted node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|control[0]  File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 57
+Info (176353): Automatically promoted node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|control[0]  File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 57
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|out_pwm File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 12
-        Info (176357): Destination node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|Mux31~3 File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 80
-Info (176353): Automatically promoted node avalon_cmpt:inst|avalon_cmpt_cpu:cpu|avalon_cmpt_cpu_cpu:cpu|avalon_cmpt_cpu_cpu_nios2_oci:the_avalon_cmpt_cpu_cpu_nios2_oci|avalon_cmpt_cpu_cpu_nios2_oci_debug:the_avalon_cmpt_cpu_cpu_nios2_oci_debug|resetrequest  File: C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_cmpt_cpu_cpu.v Line: 186
+        Info (176357): Destination node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|out_pwm File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 12
+        Info (176357): Destination node avalon_cmpt:inst|avalon_pwm:avalon_cmp_0|Mux31~3 File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_pwm.vhd Line: 80
+Info (176353): Automatically promoted node avalon_cmpt:inst|avalon_cmpt_cpu:cpu|avalon_cmpt_cpu_cpu:cpu|avalon_cmpt_cpu_cpu_nios2_oci:the_avalon_cmpt_cpu_cpu_nios2_oci|avalon_cmpt_cpu_cpu_nios2_oci_debug:the_avalon_cmpt_cpu_cpu_nios2_oci_debug|resetrequest  File: D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/avalon_cmpt/synthesis/submodules/avalon_cmpt_cpu_cpu.v Line: 186
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176218): Packed 8 registers into blocks of type Block RAM
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -2043,23 +2043,23 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.77 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.71 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
-Info (144001): Generated suppressed messages file C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/output_files/avalon_pwm.fit.smsg
+Info (144001): Generated suppressed messages file D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/output_files/avalon_pwm.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 5696 megabytes
-    Info: Processing ended: Mon Sep 25 16:09:12 2023
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 5684 megabytes
+    Info: Processing ended: Mon Nov 06 16:36:58 2023
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/abdel/Desktop/BE_VHDL_23_G19/avalon_pwm/output_files/avalon_pwm.fit.smsg.
+The suppressed messages can be found in D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/output_files/avalon_pwm.fit.smsg.
 
 

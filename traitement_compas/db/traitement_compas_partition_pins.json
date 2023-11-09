@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_valid",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[8]",
+					"strict" : false
+				},
+				{
+					"name" : "continu",
+					"strict" : false
+				},
+				{
+					"name" : "start_stop",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[3]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[4]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[5]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[6]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[7]",
+					"strict" : false
+				},
+				{
+					"name" : "compteur_out_angle[8]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

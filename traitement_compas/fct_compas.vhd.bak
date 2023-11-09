@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity fct_compas is
+port ( start_stop,continu ,diviseur_1hz_out: in std_logic;
+compteur_out_angle: in std_logic_vector(8 downto 0);
+data_valid: out std_logic;
+data_compas: out std_logic_vector(8 downto 0));
+end fct_compas;
+
+architecture bhv of fct_compas is
+begin
+	process(compteur_out_angle)
+	begin	
+  	
+	 if (continu  = '1') then
+     data_valid <= '1';
+     data_compas <= compteur_out_angle;
+	  elsif(start_stop ='0') then
+		 data_valid <= '1'; 
+		 data_compas <= compteur_out_angle;
+		 else 
+				data_valid <= '0'; 
+				data_compas <= "000000000";
+			end if;
+	end process;
+end bhv;

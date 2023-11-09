@@ -1,0 +1,15 @@
+09:40:01 **** Incremental Build of configuration Nios II for project test_cmps ****
+make all 
+Info: Building ../test_cmps_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_cmps_bsp/
+[BSP build complete]
+Info: Linking test_cmps.elf
+nios2-elf-g++  -T'../test_cmps_bsp//linker.x' -msys-crt0='../test_cmps_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../test_cmps_bsp/   -Wl,-Map=test_cmps.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o test_cmps.elf obj/default/hello_world.o -lm -msys-lib=m
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: test_cmps.elf section `.text' will not fit in region `ram'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xf200 of test_cmps.elf section `.rwdata' is not within region `ram'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x10dc0 of test_cmps.elf section `.bss' is not within region `ram'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0xf200 of test_cmps.elf section `.rwdata' is not within region `ram'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: address 0x10dc0 of test_cmps.elf section `.bss' is not within region `ram'
+c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/bin/ld.exe: region `ram' overflowed by 15808 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_cmps.elf] Error 1
