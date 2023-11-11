@@ -1,0 +1,50 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity pwm_generator is
+    port (
+        clk: in std_logic;
+        reset: in std_logic;
+        btn_increase: in std_logic;
+        btn_decrease: in std_logic;
+        out_pwm: out std_logic_vector(7 downto 0)
+    );
+end entity pwm_generator;
+
+architecture behavioral of pwm_generator is
+    signal counter: unsigned(15 downto 0) := (others => '0');
+    signal pwm_signal: std_logic := '0';
+    signal pulse_width: unsigned(7 downto 0) := (others => '0');
+    constant CLOCK_PERIOD: time := 20 ns; -- 50 MHz clock period
+
+begin
+    process (clk, reset)
+    begin
+        if reset = '1' then
+            counter <= (others => '0');
+            pulse_width <= (others => '0');
+            pwm_signal <= '0';
+        elsif rising_edge(clk) then
+            if btn_increase = '1' then
+                pulse_width <= pulse_width + 1;
+            elsif btn_decrease = '1' then
+                pulse_width <= pulse_width - 1;
+            end if;
+            
+            if counter = 0 then
+                pwm_signal <= '1';
+            elsif counter = pulse_width then
+                pwm_signal <= '0';
+            end if;
+            
+            counter <= counter + 1;
+            if counter = 65535 then
+                counter <= (others => '0');
+            end if;
+        end if;
+    end process;
+
+    out_pwm <= std_logic_vector(pulse_width);
+
+end architecture behavioral;
