@@ -1,5 +1,5 @@
 Fitter report for avalon_pwm
-Sat Nov 11 16:27:15 2023
+Sun Nov 12 15:54:50 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Failed - Sat Nov 11 16:27:15 2023           ;
+; Fitter Status                      ; Failed - Sun Nov 12 15:54:49 2023           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; avalon_pwm                                  ;
 ; Top-level Entity Name              ; avalon_pwm_schema                           ;
@@ -1852,10 +1852,10 @@ Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seco
 Error (171000): Can't fit design in device
 Info (144001): Generated suppressed messages file D:/MASTER2/BE_VHDL_2023_G19/avalon_pwm/output_files/avalon_pwm.fit.smsg
 Error: Quartus Prime Fitter was unsuccessful. 2 errors, 8 warnings
-    Error: Peak virtual memory: 5148 megabytes
-    Error: Processing ended: Sat Nov 11 16:27:15 2023
+    Error: Peak virtual memory: 5147 megabytes
+    Error: Processing ended: Sun Nov 12 15:54:50 2023
     Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:08
+    Error: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+

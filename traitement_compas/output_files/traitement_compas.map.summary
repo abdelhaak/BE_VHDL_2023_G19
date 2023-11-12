@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Nov 08 23:03:38 2023
+Analysis & Synthesis Status : Successful - Sun Nov 12 18:50:09 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : traitement_compas
-Top-level Entity Name : fct_compas
+Top-level Entity Name : traitement_compas
 Family : Cyclone IV E
-Total logic elements : 10
-    Total combinational functions : 10
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 22
+Total logic elements : 973
+    Total combinational functions : 643
+    Dedicated logic registers : 695
+Total registers : 695
+Total pins : 17
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 61,440
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

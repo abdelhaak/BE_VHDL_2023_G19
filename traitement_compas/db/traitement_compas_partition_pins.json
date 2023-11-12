@@ -8,31 +8,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_compas[0]",
+					"name" : "out_1khz",
 					"strict" : false
 				},
 				{
-					"name" : "data_compas[1]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[2]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[3]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[4]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[5]",
-					"strict" : false
-				},
-				{
-					"name" : "data_compas[6]",
+					"name" : "data_compas[8]",
 					"strict" : false
 				},
 				{
@@ -40,7 +20,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_compas[8]",
+					"name" : "data_compas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_compas[0]",
 					"strict" : false
 				},
 				{
@@ -52,39 +56,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[0]",
+					"name" : "RAZ_N",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[1]",
+					"name" : "in_pwm",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[2]",
+					"name" : "in_1khz",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[3]",
+					"name" : "clk_50MHz",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[4]",
+					"name" : "altera_reserved_tms",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[5]",
+					"name" : "altera_reserved_tck",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[6]",
+					"name" : "altera_reserved_tdi",
 					"strict" : false
 				},
 				{
-					"name" : "compteur_out_angle[7]",
-					"strict" : false
-				},
-				{
-					"name" : "compteur_out_angle[8]",
+					"name" : "altera_reserved_tdo",
 					"strict" : false
 				}
 			]

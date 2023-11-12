@@ -22,7 +22,7 @@ architecture bhv of detect_front is
 				compteur_out_angle <= angle_front;
 			end if;
 		else 
-			angle_front <= "000000000";
+			angle_front <= "000001000";
 		end if;
 		end process;
 	
