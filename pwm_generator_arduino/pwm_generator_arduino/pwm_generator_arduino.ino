@@ -1,13 +1,12 @@
 #include <TimerOne.h>
 
-const int pwmPin = 9; // Choose the PWM pin you want to use
+const int pwmPin = 9; // Port de la sortie de signal PWM
 
 void setup() {
   pinMode(pwmPin, OUTPUT);
-
-  // Set up Timer1 with a frequency of 1 kHz
-  Timer1.initialize(1000); // in microseconds -> 102ms => 9,8 Hz
-  Timer1.pwm(pwmPin, 371); // 37% duty cycle (0 to 1023)
+  // Mise en marche le timer avec les valeurs de fréquence et DUTY
+  Timer1.initialize(102000); // en microseconds -> 102ms => 9,8 Hz
+  Timer1.pwm(pwmPin, 180); // 37% DUTY (0 à 1023)  -> 360º
 }
 
 void loop() {

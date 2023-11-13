@@ -4,47 +4,47 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "valeur_compas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[8]",
+					"strict" : false
+				},
+				{
 					"name" : "data_valid",
 					"strict" : false
 				},
 				{
-					"name" : "out_pwm",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[7]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[6]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[5]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[4]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[3]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[2]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[1]",
-					"strict" : false
-				},
-				{
-					"name" : "leds_export[0]",
-					"strict" : false
-				},
-				{
-					"name" : "continu",
+					"name" : "raz_n",
 					"strict" : false
 				},
 				{
@@ -52,15 +52,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_50MHz",
+					"name" : "clk_50M",
 					"strict" : false
 				},
 				{
-					"name" : "boutons_export[0]",
+					"name" : "in_pwm_compas",
 					"strict" : false
 				},
 				{
-					"name" : "boutons_export[1]",
+					"name" : "continu",
 					"strict" : false
 				},
 				{

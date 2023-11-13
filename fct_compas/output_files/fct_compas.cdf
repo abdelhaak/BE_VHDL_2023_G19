@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("D:/MASTER2/BE_VHDL_2023_G19/fct_compas/output_files/") File("fct_compas.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/abdel/Desktop/fct_compas/output_files/") File("fct_compas.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
