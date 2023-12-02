@@ -1,5 +1,5 @@
 Analysis & Synthesis report for traitement_compas
-Sun Nov 12 18:50:09 2023
+Sat Dec 02 22:14:55 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,20 +16,15 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for sld_signaltap:auto_signaltap_0
- 17. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 18. Signal Tap Logic Analyzer Settings
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0
- 21. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 22. Elapsed Time Per Partition
- 23. Connections to In-System Debugging Instance "auto_signaltap_0"
- 24. Analysis & Synthesis Messages
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Source assignments for sld_signaltap:auto_signaltap_0
+ 14. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 15. Signal Tap Logic Analyzer Settings
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -55,16 +50,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 12 18:50:09 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 02 22:14:55 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; traitement_compas                           ;
 ; Top-level Entity Name              ; traitement_compas                           ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 973                                         ;
-;     Total combinational functions  ; 643                                         ;
+;     Total combinational functions  ; 644                                         ;
 ;     Dedicated logic registers      ; 695                                         ;
 ; Total registers                    ; 695                                         ;
-; Total pins                         ; 17                                          ;
+; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 61,440                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -180,12 +175,12 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                     ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
-; detect_front.vhd                                                   ; yes             ; User VHDL File                               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd                                                   ;             ;
-; div_1Hz.vhd                                                        ; yes             ; User VHDL File                               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd                                                        ;             ;
-; fct_compas.vhd                                                     ; yes             ; User VHDL File                               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd                                                     ;             ;
-; signal_cmpt.vhd                                                    ; yes             ; User VHDL File                               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd                                                    ;             ;
-; traitement_compas.bdf                                              ; yes             ; User Block Diagram/Schematic File            ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/traitement_compas.bdf                                              ;             ;
-; div_1khz.vhd                                                       ; yes             ; User VHDL File                               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd                                                       ;             ;
+; detect_front.vhd                                                   ; yes             ; User VHDL File                               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd                                                   ;             ;
+; div_1Hz.vhd                                                        ; yes             ; User VHDL File                               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd                                                        ;             ;
+; fct_compas.vhd                                                     ; yes             ; User VHDL File                               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd                                                     ;             ;
+; signal_cmpt.vhd                                                    ; yes             ; User VHDL File                               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd                                                    ;             ;
+; traitement_compas.bdf                                              ; yes             ; User Block Diagram/Schematic File            ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/traitement_compas.bdf                                              ;             ;
+; div_1khz.vhd                                                       ; yes             ; User VHDL File                               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd                                                       ;             ;
 ; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                         ;             ;
 ; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                    ;             ;
 ; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                       ;             ;
@@ -194,8 +189,8 @@ refer to the applicable agreement for further details.
 ; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc                                                ;             ;
 ; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                            ;             ;
 ; sld_ela_trigger.tdf                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_trigger.tdf                                       ;             ;
-; db/sld_ela_trigger_vnp.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_ela_trigger_vnp.tdf                                         ;             ;
-; db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v        ; yes             ; Encrypted Auto-Generated Megafunction        ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v        ;             ;
+; db/sld_ela_trigger_vnp.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_ela_trigger_vnp.tdf                                         ;             ;
+; db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v        ; yes             ; Encrypted Auto-Generated Megafunction        ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v        ;             ;
 ; sld_alt_reduction.vhd                                              ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_alt_reduction.vhd                                     ;             ;
 ; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mbpmg.vhd                                             ;             ;
 ; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd                              ;             ;
@@ -208,7 +203,7 @@ refer to the applicable agreement for further details.
 ; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                ;             ;
 ; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                ;             ;
 ; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                              ;             ;
-; db/altsyncram_ab24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/altsyncram_ab24.tdf                                             ;             ;
+; db/altsyncram_ab24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/altsyncram_ab24.tdf                                             ;             ;
 ; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.tdf                                              ;             ;
 ; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/others/maxplus2/memmodes.inc                                            ;             ;
 ; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_hdffe.inc                                               ;             ;
@@ -218,33 +213,33 @@ refer to the applicable agreement for further details.
 ; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/muxlut.inc                                                ;             ;
 ; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                              ;             ;
 ; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                              ;             ;
-; db/mux_tsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/mux_tsc.tdf                                                     ;             ;
+; db/mux_tsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/mux_tsc.tdf                                                     ;             ;
 ; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf                                            ;             ;
 ; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/declut.inc                                                ;             ;
 ; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                                           ;             ;
-; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/decode_dvf.tdf                                                  ;             ;
+; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/decode_dvf.tdf                                                  ;             ;
 ; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf                                           ;             ;
 ; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                           ;             ;
 ; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc                                              ;             ;
 ; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                                           ;             ;
 ; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                                   ;             ;
-; db/cntr_egi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_egi.tdf                                                    ;             ;
-; db/cmpr_qgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_qgc.tdf                                                    ;             ;
-; db/cntr_m9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_m9j.tdf                                                    ;             ;
-; db/cntr_ggi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_ggi.tdf                                                    ;             ;
-; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_rgc.tdf                                                    ;             ;
-; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_23j.tdf                                                    ;             ;
-; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_ngc.tdf                                                    ;             ;
+; db/cntr_egi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_egi.tdf                                                    ;             ;
+; db/cmpr_qgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_qgc.tdf                                                    ;             ;
+; db/cntr_m9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_m9j.tdf                                                    ;             ;
+; db/cntr_ggi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_ggi.tdf                                                    ;             ;
+; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_rgc.tdf                                                    ;             ;
+; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_23j.tdf                                                    ;             ;
+; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_ngc.tdf                                                    ;             ;
 ; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                            ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                             ;             ;
 ; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                         ;             ;
 ; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                                               ; altera_sld  ;
-; db/ip/sld898fa67b/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; db/ip/sld898fa67b/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                          ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------+-------------+
 
@@ -256,28 +251,28 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Estimated Total logic elements              ; 973                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 643                      ;
+; Total combinational functions               ; 644                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
 ;     -- 4 input functions                    ; 238                      ;
 ;     -- 3 input functions                    ; 191                      ;
-;     -- <=2 input functions                  ; 214                      ;
+;     -- <=2 input functions                  ; 215                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 512                      ;
+;     -- normal mode                          ; 513                      ;
 ;     -- arithmetic mode                      ; 131                      ;
 ;                                             ;                          ;
 ; Total registers                             ; 695                      ;
 ;     -- Dedicated logic registers            ; 695                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 17                       ;
+; I/O pins                                    ; 15                       ;
 ; Total memory bits                           ; 61440                    ;
 ;                                             ;                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 423                      ;
-; Total fan-out                               ; 4648                     ;
+; Total fan-out                               ; 4645                     ;
 ; Average fan-out                             ; 3.33                     ;
 +---------------------------------------------+--------------------------+
 
@@ -287,7 +282,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                                               ; Entity Name                                            ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+--------------+
-; |traitement_compas                                                                                                                      ; 643 (0)             ; 695 (0)                   ; 61440       ; 0            ; 0       ; 0         ; 17   ; 0            ; |traitement_compas                                                                                                                                                                                                                                                                                                                                                                                                ; traitement_compas                                      ; work         ;
+; |traitement_compas                                                                                                                      ; 644 (1)             ; 695 (0)                   ; 61440       ; 0            ; 0       ; 0         ; 15   ; 0            ; |traitement_compas                                                                                                                                                                                                                                                                                                                                                                                                ; traitement_compas                                      ; work         ;
 ;    |detect_front:inst1|                                                                                                                 ; 14 (14)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |traitement_compas|detect_front:inst1                                                                                                                                                                                                                                                                                                                                                                             ; detect_front                                           ; work         ;
 ;    |div_1kHz:inst5|                                                                                                                     ; 49 (49)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |traitement_compas|div_1kHz:inst5                                                                                                                                                                                                                                                                                                                                                                                 ; div_1kHz                                               ; work         ;
 ;    |fct_compas:inst|                                                                                                                    ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |traitement_compas|fct_compas:inst                                                                                                                                                                                                                                                                                                                                                                                ; fct_compas                                             ; work         ;
@@ -436,51 +431,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                                                                                                                                                                            ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                                           ; Reason for Removal                                                                                                                                                                                  ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|segment_shift_clk_ena                                                       ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_enable_delayed                                                 ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[0]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[0]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[1]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[1]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[2]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[2]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[3]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[3]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[4]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[4]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[5]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[5]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[6]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[6]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[7]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[7]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[8]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[8]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[9]  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[9]  ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[10] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[10] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:offset_count[11] ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|\buffer_manager:next_address[11] ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[0]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[0]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[1]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[1]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[2]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[2]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[3]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[3]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[4]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[4]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[5]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[5]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[6]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[6]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[7]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[7]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[8]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[8]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[9]                                                   ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[9]                                             ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[10]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[10]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|current_offset_delayed[11]                                                  ; Merged with sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|buffer_write_address_delayed[11]                                            ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13..15]                        ; Stuck at GND due to stuck port data_in                                                                                                                                                              ;
-; Total Number of Removed Registers = 28                                                                                                                                                  ;                                                                                                                                                                                                     ;
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                                ; Reason for Removal        ; Registers Removed due to This Register                                                                                                                        ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[15] ; Stuck at GND              ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[14], ;
-;                                                                                                                                                              ; due to stuck port data_in ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[13]  ;
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
@@ -518,28 +468,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|modified_post_count[0]                                                                                                                                                   ; 1       ;
 ; Total number of inverted registers = 15                                                                                                                                                                                                                                                                                         ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[14]                                                                                                                                                                                                                    ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_val_shift_reg[9]                                                                                                                                                                                                                     ;
-; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|serial_crc_16:\tdo_crc_gen:tdo_crc_calc|lfsr[11]                                                                                                                                                                                             ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|tdo_crc_len_reg[12]                                                                                                                                                                                                                          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|word_counter[0]                                                                                                                                                                                                        ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|counter[3]                                                                                                                                                                                        ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr|WORD_SR[3]                                                                                                                                                                                                             ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; No         ; |traitement_compas|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|offset_count                                                                                                                                                                                      ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[0]                             ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]              ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]                      ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |traitement_compas|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[1]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -631,7 +559,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 17                          ;
+; boundary_port         ; 15                          ;
 ; cycloneiii_ff         ; 50                          ;
 ;     CLR               ; 41                          ;
 ;     ENA               ; 9                           ;
@@ -646,151 +574,88 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 12                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.04                        ;
+; Average LUT depth     ; 3.07                        ;
 +-----------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_signaltap:auto_signaltap_0 ;
-+-----------------------+--------------------------------------------------------+
-; Type                  ; Count                                                  ;
-+-----------------------+--------------------------------------------------------+
-; boundary_port         ; 159                                                    ;
-; cycloneiii_ff         ; 554                                                    ;
-;     CLR               ; 69                                                     ;
-;     ENA               ; 138                                                    ;
-;     ENA CLR           ; 148                                                    ;
-;     ENA SCLR SLD      ; 36                                                     ;
-;     ENA SLD           ; 13                                                     ;
-;     SLD               ; 9                                                      ;
-;     plain             ; 141                                                    ;
-; cycloneiii_lcell_comb ; 445                                                    ;
-;     arith             ; 86                                                     ;
-;         2 data inputs ; 85                                                     ;
-;         3 data inputs ; 1                                                      ;
-;     normal            ; 359                                                    ;
-;         0 data inputs ; 6                                                      ;
-;         1 data inputs ; 5                                                      ;
-;         2 data inputs ; 34                                                     ;
-;         3 data inputs ; 142                                                    ;
-;         4 data inputs ; 172                                                    ;
-; cycloneiii_ram_block  ; 15                                                     ;
-;                       ;                                                        ;
-; Max LUT depth         ; 9.00                                                   ;
-; Average LUT depth     ; 2.96                                                   ;
-+-----------------------+--------------------------------------------------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 107                                      ;
-; cycloneiii_ff         ; 91                                       ;
-;     CLR               ; 4                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 33                                       ;
-;     ENA CLR SLD       ; 1                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; cycloneiii_lcell_comb ; 124                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 116                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 6                                        ;
-;         2 data inputs ; 21                                       ;
-;         3 data inputs ; 34                                       ;
-;         4 data inputs ; 54                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 4.00                                     ;
-; Average LUT depth     ; 1.79                                     ;
-+-----------------------+------------------------------------------+
-
-
-+-----------------------------------------------+
-; Elapsed Time Per Partition                    ;
-+--------------------------------+--------------+
-; Partition Name                 ; Elapsed Time ;
-+--------------------------------+--------------+
-; sld_signaltap:auto_signaltap_0 ; 00:00:01     ;
-; sld_hub:auto_hub               ; 00:00:00     ;
-; Top                            ; 00:00:00     ;
-+--------------------------------+--------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                        ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; RAZ_N                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; RAZ_N                               ; N/A     ;
-; RAZ_N                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; RAZ_N                               ; N/A     ;
-; clk_50MHz            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk_50MHz                           ; N/A     ;
-; continu              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; continu                             ; N/A     ;
-; continu              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; continu                             ; N/A     ;
-; data_compas[0]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[0]~8    ; N/A     ;
-; data_compas[0]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[0]~8    ; N/A     ;
-; data_compas[1]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[1]~7    ; N/A     ;
-; data_compas[1]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[1]~7    ; N/A     ;
-; data_compas[2]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[2]~6    ; N/A     ;
-; data_compas[2]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[2]~6    ; N/A     ;
-; data_compas[3]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[3]~5    ; N/A     ;
-; data_compas[3]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[3]~5    ; N/A     ;
-; data_compas[4]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[4]~4    ; N/A     ;
-; data_compas[4]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[4]~4    ; N/A     ;
-; data_compas[5]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[5]~3    ; N/A     ;
-; data_compas[5]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[5]~3    ; N/A     ;
-; data_compas[6]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[6]~2    ; N/A     ;
-; data_compas[6]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[6]~2    ; N/A     ;
-; data_compas[7]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[7]~1    ; N/A     ;
-; data_compas[7]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[7]~1    ; N/A     ;
-; data_compas[8]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[8]~0    ; N/A     ;
-; data_compas[8]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[8]~0    ; N/A     ;
-; data_valid           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_valid~0        ; N/A     ;
-; data_valid           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_valid~0        ; N/A     ;
-; in_1khz              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_1khz                             ; N/A     ;
-; in_1khz              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_1khz                             ; N/A     ;
-; in_pwm               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_pwm                              ; N/A     ;
-; in_pwm               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_pwm                              ; N/A     ;
-; start_stop           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; start_stop                          ; N/A     ;
-; start_stop           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; start_stop                          ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A     ;
-+----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                               ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details                                                                                                                                                        ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; RAZ_N                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; RAZ_N                               ; N/A                                                                                                                                                            ;
+; RAZ_N                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; RAZ_N                               ; N/A                                                                                                                                                            ;
+; clk_50MHz            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk_50MHz                           ; N/A                                                                                                                                                            ;
+; continu              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; continu                             ; N/A                                                                                                                                                            ;
+; continu              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; continu                             ; N/A                                                                                                                                                            ;
+; data_compas[0]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[0]~8    ; N/A                                                                                                                                                            ;
+; data_compas[0]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[0]~8    ; N/A                                                                                                                                                            ;
+; data_compas[1]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[1]~7    ; N/A                                                                                                                                                            ;
+; data_compas[1]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[1]~7    ; N/A                                                                                                                                                            ;
+; data_compas[2]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[2]~6    ; N/A                                                                                                                                                            ;
+; data_compas[2]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[2]~6    ; N/A                                                                                                                                                            ;
+; data_compas[3]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[3]~5    ; N/A                                                                                                                                                            ;
+; data_compas[3]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[3]~5    ; N/A                                                                                                                                                            ;
+; data_compas[4]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[4]~4    ; N/A                                                                                                                                                            ;
+; data_compas[4]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[4]~4    ; N/A                                                                                                                                                            ;
+; data_compas[5]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[5]~3    ; N/A                                                                                                                                                            ;
+; data_compas[5]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[5]~3    ; N/A                                                                                                                                                            ;
+; data_compas[6]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[6]~2    ; N/A                                                                                                                                                            ;
+; data_compas[6]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[6]~2    ; N/A                                                                                                                                                            ;
+; data_compas[7]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[7]~1    ; N/A                                                                                                                                                            ;
+; data_compas[7]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[7]~1    ; N/A                                                                                                                                                            ;
+; data_compas[8]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[8]~0    ; N/A                                                                                                                                                            ;
+; data_compas[8]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_compas[8]~0    ; N/A                                                                                                                                                            ;
+; data_valid           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_valid~0        ; N/A                                                                                                                                                            ;
+; data_valid           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; fct_compas:inst|data_valid~0        ; N/A                                                                                                                                                            ;
+; in_1khz              ; pre-synthesis ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; in_1khz              ; pre-synthesis ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The name does not exist in your design or refers to an invalid hierarchy or bus element.  You may have modified your design after creating the debug instance. ;
+; in_pwm               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_pwm                              ; N/A                                                                                                                                                            ;
+; in_pwm               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; in_pwm                              ; N/A                                                                                                                                                            ;
+; start_stop           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; start_stop                          ; N/A                                                                                                                                                            ;
+; start_stop           ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; start_stop                          ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
+; auto_signaltap_0|vcc ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                                                                                            ;
++----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -799,76 +664,76 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 12 18:49:42 2023
+    Info: Processing started: Sat Dec 02 22:14:23 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off traitement_compas -c traitement_compas
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 2 design units, including 1 entities, in source file detect_front.vhd
-    Info (12022): Found design unit 1: detect_front-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 11
-    Info (12023): Found entity 1: detect_front File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 6
+    Info (12022): Found design unit 1: detect_front-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 11
+    Info (12023): Found entity 1: detect_front File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file div_1hz.vhd
-    Info (12022): Found design unit 1: div_1Hz-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 10
-    Info (12023): Found entity 1: div_1Hz File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 5
+    Info (12022): Found design unit 1: div_1Hz-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 10
+    Info (12023): Found entity 1: div_1Hz File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file div_10khz.vhd
-    Info (12022): Found design unit 1: div_10kHz-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_10kHz.vhd Line: 10
-    Info (12023): Found entity 1: div_10kHz File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_10kHz.vhd Line: 5
+    Info (12022): Found design unit 1: div_10kHz-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_10kHz.vhd Line: 10
+    Info (12023): Found entity 1: div_10kHz File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_10kHz.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fct_compas.vhd
-    Info (12022): Found design unit 1: fct_compas-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 13
-    Info (12023): Found entity 1: fct_compas File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 6
+    Info (12022): Found design unit 1: fct_compas-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 13
+    Info (12023): Found entity 1: fct_compas File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file signal_cmpt.vhd
-    Info (12022): Found design unit 1: signal_cmpt-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 10
-    Info (12023): Found entity 1: signal_cmpt File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 5
+    Info (12022): Found design unit 1: signal_cmpt-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 10
+    Info (12023): Found entity 1: signal_cmpt File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file traitement_compas.bdf
     Info (12023): Found entity 1: traitement_compas
 Info (12021): Found 2 design units, including 1 entities, in source file div_1khz.vhd
-    Info (12022): Found design unit 1: div_1kHz-bhv File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 10
-    Info (12023): Found entity 1: div_1kHz File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 5
+    Info (12022): Found design unit 1: div_1kHz-bhv File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 10
+    Info (12023): Found entity 1: div_1kHz File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 5
 Info (12127): Elaborating entity "traitement_compas" for the top level hierarchy
 Info (12128): Elaborating entity "fct_compas" for hierarchy "fct_compas:inst"
-Warning (10492): VHDL Process Statement warning at fct_compas.vhd(18): signal "continu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 18
-Warning (10492): VHDL Process Statement warning at fct_compas.vhd(21): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at fct_compas.vhd(18): signal "continu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 18
+Warning (10492): VHDL Process Statement warning at fct_compas.vhd(21): signal "start_stop" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/fct_compas.vhd Line: 21
 Info (12128): Elaborating entity "div_1Hz" for hierarchy "div_1Hz:inst3"
-Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(25): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(29): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at div_1Hz.vhd(17): inferring latch(es) for signal or variable "tmp", which holds its previous value in one or more paths through the process File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 17
-Info (10041): Inferred latch for "tmp" at div_1Hz.vhd(17) File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(25): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at div_1Hz.vhd(29): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at div_1Hz.vhd(17): inferring latch(es) for signal or variable "tmp", which holds its previous value in one or more paths through the process File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 17
+Info (10041): Inferred latch for "tmp" at div_1Hz.vhd(17) File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1Hz.vhd Line: 17
 Info (12128): Elaborating entity "detect_front" for hierarchy "detect_front:inst1"
 Info (12128): Elaborating entity "signal_cmpt" for hierarchy "signal_cmpt:inst6"
-Warning (10492): VHDL Process Statement warning at signal_cmpt.vhd(14): signal "in_pwm_compas" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 14
+Warning (10492): VHDL Process Statement warning at signal_cmpt.vhd(14): signal "in_pwm_compas" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/signal_cmpt.vhd Line: 14
 Info (12128): Elaborating entity "div_1kHz" for hierarchy "div_1kHz:inst5"
-Warning (10492): VHDL Process Statement warning at div_1khz.vhd(25): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 25
-Warning (10492): VHDL Process Statement warning at div_1khz.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at div_1khz.vhd(29): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at div_1khz.vhd(17): inferring latch(es) for signal or variable "tmp", which holds its previous value in one or more paths through the process File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
-Info (10041): Inferred latch for "tmp" at div_1khz.vhd(17) File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at div_1khz.vhd(25): signal "count" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at div_1khz.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at div_1khz.vhd(29): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at div_1khz.vhd(17): inferring latch(es) for signal or variable "tmp", which holds its previous value in one or more paths through the process File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
+Info (10041): Inferred latch for "tmp" at div_1khz.vhd(17) File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_ela_trigger_vnp.tdf
-    Info (12023): Found entity 1: sld_ela_trigger_vnp File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_ela_trigger_vnp.tdf Line: 25
+    Info (12023): Found entity 1: sld_ela_trigger_vnp File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_ela_trigger_vnp.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v
-    Info (12023): Found entity 1: sld_reserved_traitement_compas_auto_signaltap_0_1_16e0 File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v Line: 28
+    Info (12023): Found entity 1: sld_reserved_traitement_compas_auto_signaltap_0_1_16e0 File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/sld_reserved_traitement_compas_auto_signaltap_0_1_16e0.v Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ab24.tdf
-    Info (12023): Found entity 1: altsyncram_ab24 File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/altsyncram_ab24.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_ab24 File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/altsyncram_ab24.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/mux_tsc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tsc File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/mux_tsc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
-    Info (12023): Found entity 1: decode_dvf File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/decode_dvf.tdf Line: 22
+    Info (12023): Found entity 1: decode_dvf File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/decode_dvf.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_egi.tdf
-    Info (12023): Found entity 1: cntr_egi File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_egi.tdf Line: 27
+    Info (12023): Found entity 1: cntr_egi File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_egi.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_qgc.tdf
-    Info (12023): Found entity 1: cmpr_qgc File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_qgc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_qgc File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_qgc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_m9j.tdf
-    Info (12023): Found entity 1: cntr_m9j File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_m9j.tdf Line: 25
+    Info (12023): Found entity 1: cntr_m9j File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_m9j.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ggi.tdf
-    Info (12023): Found entity 1: cntr_ggi File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_ggi.tdf Line: 27
+    Info (12023): Found entity 1: cntr_ggi File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_ggi.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_rgc.tdf
-    Info (12023): Found entity 1: cmpr_rgc File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_rgc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_rgc File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_rgc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
-    Info (12023): Found entity 1: cntr_23j File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_23j.tdf Line: 27
+    Info (12023): Found entity 1: cntr_23j File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cntr_23j.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
-    Info (12023): Found entity 1: cmpr_ngc File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_ngc.tdf Line: 22
+    Info (12023): Found entity 1: cmpr_ngc File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/cmpr_ngc.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.11.12.18:49:58 Progress: Loading sld898fa67b/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.12.02.22:14:43 Progress: Loading sld898fa67b/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -879,42 +744,36 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld898fa67b/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (13012): Latch div_1kHz:inst5|tmp has unsafe behavior File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal div_1kHz:inst5|count[0] File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 19
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/db/ip/sld898fa67b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (13012): Latch div_1kHz:inst5|tmp has unsafe behavior File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 17
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal div_1kHz:inst5|count[0] File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 19
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "div_1kHz:inst5|count[0]" is converted into an equivalent circuit using register "div_1kHz:inst5|count[0]~_emulated" and latch "div_1kHz:inst5|count[0]~32" File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 19
-    Warning (13310): Register "detect_front:inst1|angle_front[3]" is converted into an equivalent circuit using register "detect_front:inst1|angle_front[3]~_emulated" and latch "detect_front:inst1|angle_front[3]~1" File: D:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 20
+    Warning (13310): Register "detect_front:inst1|angle_front[3]" is converted into an equivalent circuit using register "detect_front:inst1|angle_front[3]~_emulated" and latch "detect_front:inst1|angle_front[3]~1" File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/detect_front.vhd Line: 20
+    Warning (13310): Register "div_1kHz:inst5|count[0]" is converted into an equivalent circuit using register "div_1kHz:inst5|count[0]~_emulated" and latch "div_1kHz:inst5|count[0]~32" File: E:/MASTER2/BE_VHDL_2023_G19/traitement_compas/div_1khz.vhd Line: 19
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_buffer_manager.vhd Line: 356
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_signaltap:auto_signaltap_0"
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
-Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 63 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 61 of its 63 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 2 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1039 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 1002 logic cells
+Info (21057): Implemented 1038 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 1003 logic cells
     Info (21064): Implemented 15 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4830 megabytes
-    Info: Processing ended: Sun Nov 12 18:50:09 2023
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:44
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4832 megabytes
+    Info: Processing ended: Sat Dec 02 22:14:55 2023
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:58
 
 

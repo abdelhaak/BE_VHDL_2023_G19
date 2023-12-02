@@ -1,8 +1,0 @@
-
-State Machine - |gestion_verin|shift_register:inst|State
-Name State.etat4 State.etat3 State.etat2 State.etat1 State.etat0 
-State.etat0 0 0 0 0 0 
-State.etat1 0 0 0 1 1 
-State.etat2 0 0 1 0 1 
-State.etat3 0 1 0 0 1 
-State.etat4 1 0 0 0 1 

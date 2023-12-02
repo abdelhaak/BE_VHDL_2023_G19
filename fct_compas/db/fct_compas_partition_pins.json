@@ -4,35 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "valeur_compas[0]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[1]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[2]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[3]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[4]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[5]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[6]",
-					"strict" : false
-				},
-				{
-					"name" : "valeur_compas[7]",
+					"name" : "data_valid",
 					"strict" : false
 				},
 				{
@@ -40,11 +12,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "data_valid",
+					"name" : "valeur_compas[7]",
 					"strict" : false
 				},
 				{
-					"name" : "raz_n",
+					"name" : "valeur_compas[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valeur_compas[0]",
 					"strict" : false
 				},
 				{
@@ -56,11 +52,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "in_pwm_compas",
+					"name" : "rst_n",
 					"strict" : false
 				},
 				{
 					"name" : "continu",
+					"strict" : false
+				},
+				{
+					"name" : "in_pwm_compas",
 					"strict" : false
 				},
 				{

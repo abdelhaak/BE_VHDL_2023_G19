@@ -8,10 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "out_1khz",
-					"strict" : false
-				},
-				{
 					"name" : "data_compas[8]",
 					"strict" : false
 				},
@@ -61,10 +57,6 @@
 				},
 				{
 					"name" : "in_pwm",
-					"strict" : false
-				},
-				{
-					"name" : "in_1khz",
 					"strict" : false
 				},
 				{
