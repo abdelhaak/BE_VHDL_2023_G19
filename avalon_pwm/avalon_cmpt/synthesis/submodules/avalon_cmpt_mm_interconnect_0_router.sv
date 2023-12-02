@@ -212,21 +212,21 @@ module avalon_cmpt_mm_interconnect_0_router
     end
 
     // ( 0x11030 .. 0x11040 )
-    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 17'h11030   ) begin
-            src_channel = 7'b0000010;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
-    end
-
-    // ( 0x11040 .. 0x11050 )
-    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 17'h11040  && read_transaction  ) begin
+    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 17'h11030  && read_transaction  ) begin
             src_channel = 7'b1000000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 1;
     end
 
-    // ( 0x11050 .. 0x11060 )
-    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 17'h11050   ) begin
+    // ( 0x11040 .. 0x11050 )
+    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 17'h11040   ) begin
             src_channel = 7'b0100000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
+    end
+
+    // ( 0x11050 .. 0x11060 )
+    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 17'h11050   ) begin
+            src_channel = 7'b0000010;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 0;
     end
 
     // ( 0x11070 .. 0x11078 )

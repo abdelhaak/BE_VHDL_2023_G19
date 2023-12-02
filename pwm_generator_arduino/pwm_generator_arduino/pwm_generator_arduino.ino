@@ -5,8 +5,8 @@ const int pwmPin = 9; // Port de la sortie de signal PWM
 void setup() {
   pinMode(pwmPin, OUTPUT);
   // Mise en marche le timer avec les valeurs de fréquence et DUTY
-  Timer1.initialize(102000); // en microseconds -> 102ms => 9,8 Hz
-  Timer1.pwm(pwmPin, 180); // 37% DUTY (0 à 1023)  -> 360º
+  Timer1.initialize(4); // en microseconds -> 4ms => 255 Hz je pense
+  Timer1.pwm(pwmPin, 512); // 50% DUTY (0 à 1023)  
 }
 
 void loop() {

@@ -70,7 +70,6 @@ bloc_horloge_10khz:	process(clk_50M,raz_n)
 
 
 
-
 --|||||................................................................
 --
 -- Bloc de synchronisation de signal de PWM 
@@ -195,7 +194,6 @@ bloc_data:	process(pwm_compas, val_compt, raz_n)
 	BEGIN
 		if raz_n= '0' then										  --  Le reset activé  --> tous les variables à zero
 		valeur_compas <= "000000000";
-		elsif val_compt='0' then 
 		fin_mesure <= '0';	
 		elsif pwm_compas'event and pwm_compas ='0' then   
 		valeur_compas <= sig_duree;
