@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 02 17:44:35 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : systeme_verin
+Top-level Entity Name : Block2
+Family : Cyclone IV E
+Total logic elements : 1,945
+    Total combinational functions : 1,734
+    Dedicated logic registers : 1,012
+Total registers : 1012
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 175,104
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

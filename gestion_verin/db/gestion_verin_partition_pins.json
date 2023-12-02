@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Angle_barre[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Angle_barre[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Raz_n",
+					"strict" : false
+				},
+				{
+					"name" : "Data_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk50M",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

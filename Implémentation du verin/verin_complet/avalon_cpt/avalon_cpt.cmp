@@ -1,9 +1,0 @@
-	component avalon_cpt is
-		port (
-			clk_clk                       : in  std_logic := 'X'; -- clk
-			cs_writeresponsevalid_n       : out std_logic;        -- writeresponsevalid_n
-			out_pwm_writeresponsevalid_n  : out std_logic;        -- writeresponsevalid_n
-			out_sens_writeresponsevalid_n : out std_logic         -- writeresponsevalid_n
-		);
-	end component avalon_cpt;
-

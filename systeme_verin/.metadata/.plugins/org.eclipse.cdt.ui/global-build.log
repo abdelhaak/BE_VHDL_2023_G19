@@ -1,0 +1,24 @@
+17:55:11 **** Incremental Build of configuration Nios II for project test_avalon_verin ****
+make all 
+Info: Building ../test_avalon_verin_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_verin_bsp/
+[BSP build complete]
+[test_avalon_verin build complete]
+17:55:21 **** Build of configuration Nios II for project test_avalon_verin ****
+make all 
+Info: Building ../test_avalon_verin_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_verin_bsp/
+[BSP build complete]
+[test_avalon_verin build complete]
+17:56:08 **** Incremental Build of configuration Nios II for project test_avalon_verin ****
+make all 
+Info: Building ../test_avalon_verin_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_verin_bsp/
+[BSP build complete]
+[test_avalon_verin build complete]
+17:56:35 **** Build of configuration Nios II for project test_avalon_verin ****
+make all 
+Info: Building ../test_avalon_verin_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_verin_bsp/
+[BSP build complete]
+[test_avalon_verin build complete]
