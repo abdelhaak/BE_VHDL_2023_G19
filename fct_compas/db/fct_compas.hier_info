@@ -1,22 +1,22 @@
 |schema1
-data_valid <= fct_compas:inst.data_valid
-clk_50M => fct_compas:inst.clk_50M
-rst_n => fct_compas:inst.raz_n
-in_pwm_compas => fct_compas:inst.in_pwm_compas
-continu => fct_compas:inst.continu
-start_stop => fct_compas:inst.start_stop
-valeur_compas[0] <= fct_compas:inst.valeur_compas[0]
-valeur_compas[1] <= fct_compas:inst.valeur_compas[1]
-valeur_compas[2] <= fct_compas:inst.valeur_compas[2]
-valeur_compas[3] <= fct_compas:inst.valeur_compas[3]
-valeur_compas[4] <= fct_compas:inst.valeur_compas[4]
-valeur_compas[5] <= fct_compas:inst.valeur_compas[5]
-valeur_compas[6] <= fct_compas:inst.valeur_compas[6]
-valeur_compas[7] <= fct_compas:inst.valeur_compas[7]
-valeur_compas[8] <= fct_compas:inst.valeur_compas[8]
+data_valid <= fct_compas:inst1.data_valid
+clk_50M => fct_compas:inst1.clk_50M
+rst_n => fct_compas:inst1.raz_n
+in_pwm_compas => fct_compas:inst1.in_pwm_compas
+continu => fct_compas:inst1.continu
+start_stop => fct_compas:inst1.start_stop
+valeur_compas[0] <= fct_compas:inst1.valeur_compas[0]
+valeur_compas[1] <= fct_compas:inst1.valeur_compas[1]
+valeur_compas[2] <= fct_compas:inst1.valeur_compas[2]
+valeur_compas[3] <= fct_compas:inst1.valeur_compas[3]
+valeur_compas[4] <= fct_compas:inst1.valeur_compas[4]
+valeur_compas[5] <= fct_compas:inst1.valeur_compas[5]
+valeur_compas[6] <= fct_compas:inst1.valeur_compas[6]
+valeur_compas[7] <= fct_compas:inst1.valeur_compas[7]
+valeur_compas[8] <= fct_compas:inst1.valeur_compas[8]
 
 
-|schema1|fct_compas:inst
+|schema1|fct_compas:inst1
 clk_50M => valid_data.CLK
 clk_50M => val_compt.CLK
 clk_50M => \Bloc_seq:etat[0].CLK
@@ -35,7 +35,7 @@ clk_50M => \bloc_horloge_10khz:count[8].CLK
 clk_50M => \bloc_horloge_10khz:count[9].CLK
 clk_50M => \bloc_horloge_10khz:count[10].CLK
 clk_50M => \bloc_horloge_10khz:count[11].CLK
-raz_n => fin_mesure.ACLR
+raz_n => fin_mesure.IN1
 raz_n => valeur_compas[0]~reg0.ACLR
 raz_n => valeur_compas[1]~reg0.ACLR
 raz_n => valeur_compas[2]~reg0.ACLR
@@ -86,6 +86,7 @@ raz_n => sig_duree[5].ACLR
 raz_n => sig_duree[6].ACLR
 raz_n => sig_duree[7].ACLR
 raz_n => sig_duree[8].ACLR
+raz_n => fin_mesure.ENA
 raz_n => clk_1Hz.ENA
 in_pwm_compas => pwm_compas.DATAIN
 continu => etat.OUTPUTSELECT

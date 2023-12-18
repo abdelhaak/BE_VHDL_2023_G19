@@ -20,6 +20,19 @@ signal start_conv : std_logic;
 signal cs,stop : std_logic;
 signal decalage : std_logic_vector(11 downto 0);
 
+
+--   
+--    SIGNAL  s_clk_adc       :   std_logic;
+--    SIGNAL  fin             :   std_logic;
+--    SIGNAL  raz_compteur    :   std_logic;
+--    SIGNAL 	start_conv		:	std_logic;
+--    SIGNAL 	clk_1Mhz			:	std_logic;
+--    SIGNAL  s_data,angle_barre          :  	std_logic_vector(11 downto 0);
+--    signal	compt_front 	: 	integer range 0 to 11;
+--	TYPE State_type IS (etat0, etat1, etat2, etat3, etat4);
+--	SIGNAL  State           :   State_Type;    		-- Création signal d'état MEF
+
+	
 begin
 
 ------------------------------------------------------------
@@ -84,10 +97,10 @@ if raz_n ='0' then
 elsif stop = '0' then
 	if rising_edge(clk_1Mhz) then
 		cnt1 := cnt1 + 1;
-		if cnt1 >= 15 then
+		if cnt1 >= 25 then
 			cs <= '0';
 			cnt2 := cnt2 + 1;
-			if cnt2 = 16 then
+			if cnt2 = 26 then
 				cs <= '1';
 				cnt1 := 0;
 				cnt2 := 0;
@@ -132,5 +145,67 @@ data_out <= decalage;
 end process;
 
 
+--
+--MEF: process(clk_1Mhz, raz_n)
+--begin
+--    if  raz_n		=	'0' then 
+--        State           <= etat0;
+--        cs_out            <=  '1';
+--        s_clk_adc       <=  '0';
+--        raz_compteur    <=  '1';
+--        angle_barre     <=  X"000";
+--    elsif   (clk_1Mhz'event and clk_1Mhz ='1') then
+--        CASE State IS
+--            When etat0 =>
+--                if start_conv   =   '1' then
+--                    State   <=  etat1;
+--                    cs_out    <=  '0';
+--                    raz_compteur    <=  '0';
+--                end if;    
+--            When etat1 =>
+--               State        <=  etat2;
+--               s_clk_adc    <=  '1';
+--            When etat2 =>
+--               State        <=  etat3;
+--               s_clk_adc    <=  '0';
+--            When etat3 =>
+--                if fin  =   '1' then
+--                    State       <=  etat4;
+--                    s_clk_adc   <=  '0';
+--                    cs_out        <=  '1';
+--                    angle_barre <=  s_data;
+--                else
+--						  State <= etat2;
+--                    s_clk_adc   <=  '1';
+--                end if;
+--            When etat4 =>
+--                if start_conv   =   '0' then
+--                    State           <=  etat0;
+--                    cs_out            <=  '1';
+--                    s_clk_adc       <=  '0';
+--                    raz_compteur    <=  '1';
+--                end if;
+--            When others => 
+--				State    <=  etat0;
+--				s_clk_adc   <=  '0';
+--				cs_out        <=  '1';
+--        end CASE;			
+--    end if;
+--end process;
+
 
 end bhv;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

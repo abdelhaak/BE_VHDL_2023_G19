@@ -1,0 +1,52 @@
+#include "sys/alt_stdio.h"
+#include "system.h"
+#include "alt_types.h"
+#include "altera_avalon_pio_regs.h"
+
+
+unsigned char data;
+//#define leds (unsigned int *) LED_BASE
+
+/*#define continu (volatile int *) AVALON_CPT_0_BASE
+#define start (volatile int *)( AVALON_CPT_0_BASE +4)
+#define data_valide (volatile int *)( AVALON_CPT_0_BASE +8)
+#define num_out (volatile int *)( AVALON_CPT_0_BASE +12)
+*/
+
+
+/*unsigned int a,b,c,d,e,f;
+int main()
+{ 
+
+while(1)
+{
+  data = IORD_ALTERA_AVALON_PIO_DATA(AVALON_CPT_0_BASE);
+  IOWR_ALTERA_AVALON_PIO_DATA(data);
+
+  printf("DATA IS : %d \n", data);
+  usleep(8000000);
+return 0;
+}
+*/
+printf("DATA IS : %d \n", data);
+
+
+/*alt_putstr("Hello from Nios II!\n");
+  *leds=255;
+  *start =1;
+  *continu=1;
+
+  /* Event loop never exits.
+  while (1)
+  {
+	  e=*data_valide;
+	  f=*num_out;
+	  printf("data_valide = %d  ",e);
+	  printf("num_out= %d \n",f);
+	  usleep(100000);
+  }
+
+  return 0;
+
+}
+*/

@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 576 136 1040 360)
+	(rect 608 136 1072 360)
 	(text "avalon_verin" (rect 196 -1 277 15)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
@@ -145,4 +145,20 @@ refer to the applicable agreement for further details.
 		(line (pt 0 224)(pt 464 224))
 		(line (pt 0 0)(pt 0 224))
 	)
+)
+(connector
+	(pt 576 208)
+	(pt 608 208)
+)
+(connector
+	(pt 576 248)
+	(pt 608 248)
+)
+(connector
+	(pt 576 288)
+	(pt 608 288)
+)
+(connector
+	(pt 576 328)
+	(pt 608 328)
 )

@@ -1,0 +1,7 @@
+	component avaloon_cmps is
+		port (
+			avalon_cpt_0_conduit_end_beginbursttransfer : in std_logic := 'X'; -- beginbursttransfer
+			clk_clk                                     : in std_logic := 'X'  -- clk
+		);
+	end component avaloon_cmps;
+

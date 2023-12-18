@@ -1,0 +1,72 @@
+10:27:41 **** Incremental Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+[test_avalon build complete]
+10:27:47 **** Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+[test_avalon build complete]
+10:27:54 **** Incremental Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../test_avalon_bsp//HAL/inc -I../test_avalon_bsp/ -I../test_avalon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:32:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    printf("data_valid is = %d  ",e);
+    ^
+hello_world_small.c:32:4: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world_small.c:32:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world_small.c:34:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(100000);
+    ^
+Info: Linking test_avalon.elf
+nios2-elf-g++  -T'../test_avalon_bsp//linker.x' -msys-crt0='../test_avalon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../test_avalon_bsp/  -msmallc  -Wl,-Map=test_avalon.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o test_avalon.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert test_avalon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11018 --timestamp 1701882753 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name avaloon_cmps --quartus_project_dir "E:/MASTER2/BE_VHDL_2023_G19/avalon_compas" --jdi ../..//output_files/avalon_compas.jdi --sopcinfo E:/MASTER2/BE_VHDL_2023_G19/avalon_compas/software/test_avalon_bsp/../../avaloon_cmps.sopcinfo
+Info: (test_avalon.elf) 3596 Bytes program size (code + initialized data).
+Info:                   16 KBytes free for stack + heap.
+Info: Creating test_avalon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source test_avalon.elf >test_avalon.objdump
+[test_avalon build complete]
+10:28:11 **** Incremental Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+[test_avalon build complete]
+10:28:58 **** Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+[test_avalon build complete]
+10:29:01 **** Incremental Build of configuration Nios II for project test_avalon ****
+make all 
+Info: Building ../test_avalon_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../test_avalon_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../test_avalon_bsp//HAL/inc -I../test_avalon_bsp/ -I../test_avalon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:32:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+    printf("data_valid is = %d  ",e);
+    ^
+hello_world_small.c:32:4: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world_small.c:32:4: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world_small.c:34:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(100000);
+    ^
+Info: Linking test_avalon.elf
+nios2-elf-g++  -T'../test_avalon_bsp//linker.x' -msys-crt0='../test_avalon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../test_avalon_bsp/  -msmallc  -Wl,-Map=test_avalon.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o test_avalon.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert test_avalon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x11018 --timestamp 1701882753 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name avaloon_cmps --quartus_project_dir "E:/MASTER2/BE_VHDL_2023_G19/avalon_compas" --jdi ../..//output_files/avalon_compas.jdi --sopcinfo E:/MASTER2/BE_VHDL_2023_G19/avalon_compas/software/test_avalon_bsp/../../avaloon_cmps.sopcinfo
+Info: (test_avalon.elf) 3596 Bytes program size (code + initialized data).
+Info:                   16 KBytes free for stack + heap.
+Info: Creating test_avalon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source test_avalon.elf >test_avalon.objdump
+[test_avalon build complete]

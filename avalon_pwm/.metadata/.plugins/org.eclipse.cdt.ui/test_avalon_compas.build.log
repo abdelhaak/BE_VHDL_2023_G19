@@ -1,0 +1,6 @@
+03:03:06 **** Clean-only build of configuration Nios II for project test_avalon_compas ****
+make clean 
+[test_avalon_compas clean complete]
+
+03:03:07 Build Finished (took 303ms)
+
